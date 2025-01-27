@@ -1,0 +1,36 @@
+{
+  "port": 2183,
+  "databaseHost": "127.0.0.1",
+  "databasePort": "27017",
+  "databaseName": "reeltor-backend-assignment",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "nodemailer": {
+     "service": "gmail",
+     "email": "mobiloitte.node@gmail.com",
+     "password": "wdbakhorlxmmqrhg"
+   },
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "reeltor-backend-assignment",
+      "version": "2.0",
+      "description": "reeltor-backend-assignment"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "cloudinary": {
+    "cloud_name": "dnbt2zgcr",
+    "api_key": "294543325966965",
+    "api_secret": "r6tCVl5T6lkq_oXZDGA_fBds8lk"
+  }
+}
